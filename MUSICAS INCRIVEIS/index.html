@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Musical</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionário Musical</h1>
+        <p>Responda o questionário abaixo para receber uma recomendação de música e banda!</p>
+    
+    
+        <div>
+        
+
+        </div>
+
+        <div id="questionnaire">
+            <div class="question">
+                <h3>Qual seu humor agora?</h3>
+                <button class="option" onclick="selectAnswer(1, 'Feliz')">Feliz</button>
+                <button class="option" onclick="selectAnswer(1, 'Triste')">Triste</button>
+                <button class="option" onclick="selectAnswer(1, 'Relaxado')">Relaxado</button>
+                <button class="option" onclick="selectAnswer(1, 'Energético')">Energético</button>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Sua recomendação</h2>
+            <p id="songRecommendation"></p>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R4GqQ9886mc?si=htnNYgmzLjzFllSr" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+             allowfullscreen></iframe>
+        </div>
+            <p id="bandRecommendation"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
